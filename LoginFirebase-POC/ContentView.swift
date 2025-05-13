@@ -7,7 +7,6 @@
 
 import SwiftUI
 import CoreData
-import FirebaseFirestore
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -81,13 +80,6 @@ private let itemFormatter: DateFormatter = {
     formatter.timeStyle = .medium
     return formatter
 }()
-
-struct User: Identifiable, Codable {
-    @DocumentID var id: String?
-    var name: String
-    var email: String
-    var profilePictureURL: String?
-}
 
 #Preview {
     ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
