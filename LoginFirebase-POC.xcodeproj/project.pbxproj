@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		938ACDA02DD2B43C0072EE13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 938ACD9F2DD2B43C0072EE13 /* GoogleService-Info.plist */; };
-		938ACDA12DD2B43C0072EE13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 938ACD9F2DD2B43C0072EE13 /* GoogleService-Info.plist */; };
-		938ACDA22DD2B43C0072EE13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 938ACD9F2DD2B43C0072EE13 /* GoogleService-Info.plist */; };
 		938ACDA52DD2B95D0072EE13 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 938ACDA42DD2B95D0072EE13 /* FirebaseAnalytics */; };
 		938ACDA72DD2B95D0072EE13 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 938ACDA62DD2B95D0072EE13 /* FirebaseAuth */; };
 		938ACDA92DD2B95D0072EE13 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 938ACDA82DD2B95D0072EE13 /* FirebaseCore */; };
@@ -38,7 +35,6 @@
 		938ACD6D2DD2B3E90072EE13 /* LoginFirebase-POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoginFirebase-POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		938ACD822DD2B3EB0072EE13 /* LoginFirebase-POCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoginFirebase-POCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		938ACD8C2DD2B3EB0072EE13 /* LoginFirebase-POCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoginFirebase-POCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		938ACD9F2DD2B43C0072EE13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -96,7 +92,6 @@
 				938ACD852DD2B3EB0072EE13 /* LoginFirebase-POCTests */,
 				938ACD8F2DD2B3EB0072EE13 /* LoginFirebase-POCUITests */,
 				938ACD6E2DD2B3E90072EE13 /* Products */,
-				938ACD9F2DD2B43C0072EE13 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,7 +233,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938ACDA02DD2B43C0072EE13 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938ACDA12DD2B43C0072EE13 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938ACDA22DD2B43C0072EE13 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
