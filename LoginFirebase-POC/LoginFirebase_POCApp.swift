@@ -17,7 +17,8 @@ struct LoginFirebase_POCApp: App {
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
 //            CreateBook()
-            Home()
+//            Home()
+            Login()
         }
     }
 }

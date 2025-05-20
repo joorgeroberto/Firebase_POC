@@ -6,6 +6,7 @@
 //
 import SwiftUI
 import FirebaseFirestore
+import FirebaseAuth
 
 struct Book: Identifiable, Codable {
     @DocumentID var id: String?
@@ -31,8 +32,26 @@ enum CommonsErrors: Error {
     case networkError
 }
 
+enum AuthenticationState: Error {
+    case unauthenticated
+    case authenticating
+    case authenticated
+}
+
 class FirebaseService {
     private let db = Firestore.firestore()
+
+    // MARK: SignIn
+    func signInWithEmailAndPassword(email: String, password: String) async throws -> AuthDataResult {
+        let result = try await Auth.auth().signIn(withEmail: email, password: password)
+        return result
+    }
+
+    // MARK: SignUP
+    func signUpWithEmailAndPassword(email: String, password: String) async throws -> AuthDataResult {
+        let result = try await Auth.auth().createUser(withEmail: email, password: password)
+        return result
+    }
 
     // MARK: BOOKS
     func createBook(book: Book) async throws {
